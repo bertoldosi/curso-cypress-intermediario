@@ -19,6 +19,8 @@
 
 Execute o comando `docker run --publish 80:80 --publish 22:22 --hostname localhost wlsf82/gitlab-ce` e aguarde até o ambiente inicializar (isso pode levar alguns minutos), e então acesse a URL http://localhost/ para definir a senha o usuário `root`.
 
+Listar localhots abertos: `sudo netstat -tlp`
+
 ### Criando um Access Token
 
 1. Faça login com o usuário `root` com a senha definida na seção anterior
@@ -72,6 +74,7 @@ temp/
 Na raiz do projeto, crie um diretório chamado `temp/`. Este diretório será utilizado posteriormente para o teste de clone de projeto.
 
 ### Instalando o Cypress
+
 
 No terminal, na raiz do projeto, execute o comando `npm i cypress -D` (este comando irá instalar o Cypress como dependência de desenvolvimento, além de criar o arquivo `package-lock.json` e o diretório `node_modules/`)
 
